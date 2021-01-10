@@ -6,5 +6,9 @@
 if __name__ == '__main__':
     item = 100
     while item < 1000:
-        if (item / 100 + (item / 10) % 10 + item % 10) == ((item / 100) * (item / 10 % 10) * (item % 10)):
+        num1 = int(item / 100)
+        num2 = int((item / 10) % 10)
+        num3 = int(item % 10)
+        if num1 + num2 + num3 == num1 * num2 * num3:
             print(item)
+        item += 1
